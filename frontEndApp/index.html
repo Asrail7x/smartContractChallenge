@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart contract challenge</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Smart Contract Challenge</h1>
+    <div>
+        <h2>Refill banknotes (changeStocks)</h2>
+        <div>
+            <h3>1 Peso notes</h3>
+            <input type="number" id="index0">
+        </div>
+        <div>
+            <h3>5 Pesos notes</h3>
+            <input type="number" id="index1">
+        </div>
+        <div>
+            <h3>10 Pesos notes</h3>
+            <input type="number" id="index2">
+        </div>
+        <div>
+            <h3>20 Pesos notes</h3>
+            <input type="number" id="index3">
+        </div>
+        <div>
+            <h3>50 Pesos notes</h3>
+            <input type="number" id="index4">
+        </div>
+        <div>
+            <h3>100 Pesos notes</h3>
+            <input type="number" id="index5">
+        </div>
+        <button id="submitBanknotes">Submit</button>
+    </div>
+    <div>
+        <h2>Banknotes of a value (convertDenom)</h2>
+        <input type="number" id="convertDenom">
+        <button id="convertDenomButton"></button>
+        <p id="responseConvert"></p>
+    </div>
+
+    <div>
+        <h2>Buy cash (mintCash)</h2>
+        <input type="number" id="mintCashInput">
+        <button id="mintCashButton"></button>
+    </div>
+
+    <div>
+        <h2>Request my total cash (totalCashOfUser)</h2>
+        <button id="requestTotalCash"></button>
+    </div>
+    
+    
+    <script src="index.js"></script>
+</body>
+</html>
