@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,55 +8,78 @@
     <title>Smart contract challenge</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <h1>Smart Contract Challenge</h1>
-    <div>
-        <h2>Refill banknotes (changeStocks)</h2>
-        <div>
-            <h3>1 Peso notes</h3>
-            <input type="number" id="index0">
-        </div>
-        <div>
-            <h3>5 Pesos notes</h3>
-            <input type="number" id="index1">
-        </div>
-        <div>
-            <h3>10 Pesos notes</h3>
-            <input type="number" id="index2">
-        </div>
-        <div>
-            <h3>20 Pesos notes</h3>
-            <input type="number" id="index3">
-        </div>
-        <div>
-            <h3>50 Pesos notes</h3>
-            <input type="number" id="index4">
-        </div>
-        <div>
-            <h3>100 Pesos notes</h3>
-            <input type="number" id="index5">
-        </div>
-        <button id="submitBanknotes">Submit</button>
-    </div>
-    <div>
-        <h2>Banknotes of a value (convertDenom)</h2>
-        <input type="number" id="convertDenom">
-        <button id="convertDenomButton"></button>
-        <p id="responseConvert"></p>
+    <h2>Refill banknotes<br>(changeStocks)</h2>
+    <div class="display">
+
+    <div class="Left">
+      <img src="Ethereum_Flatline.svg" alt="" srcset="">
     </div>
 
-    <div>
-        <h2>Buy cash (mintCash)</h2>
-        <input type="number" id="mintCashInput">
-        <button id="mintCashButton"></button>
+    <div class="ContentLeft">
+       
+        <h3>1 Peso <br> notes</h3>
+        <input type="number" id="index0">
+
+        <h3>5 Pesos <br> notes</h3>
+        <input type="number" id="index1">
+
+        <h3>10 Pesos <br> notes</h3>
+        <input type="number" id="index2">
+
     </div>
 
-    <div>
-        <h2>Request my total cash (totalCashOfUser)</h2>
-        <button id="requestTotalCash"></button>
+    <div class="ContentRight">
+
+        <h3>20 Pesos <br> notes</h3>
+        <input type="number" id="index3">
+
+        <h3>50 Pesos <br> notes</h3>
+        <input type="number" id="index4">
+
+        <h3>100 Pesos <br> notes</h3>
+        <input type="number" id="index5">
+
+    </div>   
+
+    <div class="Right">
+      <img src="Ethereum_Outline.svg" alt="" srcset="">
+    </div> 
+
     </div>
-    
-    
+    <button class="buttonsSm2" id="submitBanknotes">Submit</button>
+    <div class="display">
+        <div>
+            <h2>Banknotes of a value <br> (convertDenom)</h2>
+            <input type="number" id="convertDenomInput">
+            <button class="buttonsM" id="convertDenomButton">convertDenom</button>
+            <p id="responseConvert"></p>
+        </div>
+        <div>
+            <h2>Buy cash (mintCash)</h2>
+            <input type="number" id="mintCashInput">
+            <button class="buttonsSm" id="mintCashButton">mintCash</button>
+        </div>
+        <div>
+            <h2>Request my total cash <br> (totalCashOfUser)</h2>
+            <button class="buttonsL" id="requestTotalCash">requestTotalCash</button>
+        </div>
+    </div>
+    <div>
+        <button class="buttonsSm2" id="checkStockButton">CHECK STOCK</button>
+        <button class="buttonsSm2" id="connectButton">CONNECT WALLET</button>
+        <button class="buttonsSm2" onclick="window.open('https://kovan.etherscan.io/address/0xacC0Dc8B8c25DcA9B03f46Af350f3f3403343cFc', '_blank');">EXPLORER ADDRESS</button>
+    </div>
+    <br>
+    <h2 id="walletAddress">Not logged yet</h2>
+    <button class="buttonsSm2"><a href="sccpdf.pdf" download="challengePDF.pdf">Download PDF</a></button>
+    <br>
+    <script type="text/javascript" src="challengeContractABI.json"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4/web3.min.js" integrity="sha512-oMd9Re3VgJcXuZJn9DN6X7S7JUc7xLYZ2UyZ85Mm/xzaW3lwBr4fV2zjuu/n5jY/Of/2JOx35CTa6zvQNxb31Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="index.js"></script>
 </body>
+
 </html>

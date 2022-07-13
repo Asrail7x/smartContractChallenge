@@ -10,7 +10,7 @@ contract VouchersChallenge is ERC1155, Ownable, ERC1155Supply{
     using SafeERC20 for IERC20;
     
     // Id 0 = 1 Peso, Id 1 = 5 Pesos, Id 2 = 10 Pesos, Id 3 = 20 Pesos, Id 4 = 50 Pesos, Id 5 = 100 Pesos
-    uint[6] public CashSupply = [5, 5, 5, 5, 5, 5]; //
+    uint[6] public CashSupply = [50, 5, 5, 2, 2, 20]; //
     mapping (uint => uint) public CashToValue;
 
     constructor() ERC1155("Smart Contract Challenge") {
